@@ -282,8 +282,8 @@ extension TSWriter: VideoCodecDelegate {
 }
 
 class TSFileWriter: TSWriter {
-    static let defaultSegmentCount: Int = 3
-    static let defaultSegmentMaxCount: Int = 12
+    static let defaultSegmentCount: Int = 12
+    static let defaultSegmentMaxCount: Int = 48
 
     var segmentMaxCount: Int = TSFileWriter.defaultSegmentMaxCount
     private(set) var files: [M3UMediaInfo] = []
